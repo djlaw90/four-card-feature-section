@@ -1,0 +1,49 @@
+html, body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid black;
+    align-items: center;
+}
+
+header p {
+    width: 500px;
+    text-align: center;
+}
+
+section {
+    border: 1px solid blue;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+    height: 250px;
+    padding: 25px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: space-around;
+}
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }

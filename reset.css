@@ -1,0 +1,58 @@
+/* Box-sizing border-box for consistent element sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* Remove list styles */
+ul, ol {
+    list-style: none;
+}
+
+/* Remove default anchor styles */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Set a consistent font style */
+body {
+    font-family: sans-serif;
+    line-height: 1.5;
+    background-color: #fff;
+    color: #333;
+}
+
+/* Ensure images don't exceed their container */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* Reset heading sizes for better control */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+/* Remove button styles */
+button {
+    border: none;
+    background: none;
+    cursor: pointer;
+    font: inherit;
+}
+
+/* Remove default input and textarea styles */
+input, textarea, select {
+    font: inherit;
+    border: none;
+    outline: none;
+}
+
+/* Remove focus outlines (optional, keep for accessibility) */
+*:focus {
+    outline: none;
+}
