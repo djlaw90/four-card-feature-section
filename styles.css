@@ -1,53 +1,89 @@
+
+:root {
+    --reddish: #EA5454;
+    --light-blue: #44D3D2;
+    --orangey: #FCAE4A;
+    --dark-blue: #549EF2;
+    --dark-grey: #4D4F62;
+}
+
+
+
 html, body {
+    color: var(--dark-grey);
     height: 100%;
     display: flex;
     flex-direction: column;
+    font-family: "Poppins", serif;
 }
+
 header {
     display: flex;
     flex-direction: column;
-    border: 1px solid black;
     align-items: center;
-    margin: 3vh 0 3vh 0;
+    height: 168px;
+    margin-top: 5vh;
 }
 
 header p {
-    width: 500px;
+    width: 540px;
     text-align: center;
 }
 
-article {
-    border: 1px solid blue;
-}
-
 .card {
+    display: flex;
+    flex-direction: column;
     background: white;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    min-width: 400px;
-    min-height: 300px;
-    max-height: 300px;
+    min-width: 350px;
+    min-height: 250px;
+    max-height: 250px;
+    box-shadow: 
+    -5px 0px 5px rgba(0, 0, 0, 0.1), /* Left */
+    5px 0px 5px rgba(0, 0, 0, 0.1),  /* Right */
+    0px 5px 15px rgba(0, 0, 0, 0.1);  /* Bottom */
 }
 
 .card img {
-    width: 100px;
+    width: 64px;
+    justify-self: flex-end;
 }
 
 .card-container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-    max-width: 1200px;
+    max-width: 1110px;
     margin: auto;
     padding: 20px;
-    height: 80%;
+    height: 530px;
+}
+
+.card .content {
+    flex-grow: 1;
+}
+
+.card .image-container {
+    display: flex;
+    justify-content: flex-end;
 }
 
 .card.center {
     align-self: center;
-  }
-  
+}
+
+#team-builder {
+    border-top: 5px solid var(--reddish);
+}
+
+#karma {
+    border-top: 5px solid var(--orangey);
+}
+
+#supervisor, #calculator {
+    border-top: 5px solid var(--light-blue);
+}
 
 .column {
     display: grid;
@@ -63,6 +99,27 @@ footer {
     text-align: center;
     line-height: 50px;
 }
+
+
+/* Font Styles */
+
+.poppins-extralight {
+    font-family: "Poppins", serif;
+    font-weight: 200;
+    font-style: normal;
+  }
+  
+  .poppins-regular {
+    font-family: "Poppins", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  .poppins-semibold {
+    font-family: "Poppins", serif;
+    font-weight: 600;
+    font-style: normal;
+  }
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
